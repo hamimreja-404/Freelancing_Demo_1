@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Proposal: Custom Web Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-2;
+        }
+        .section-subtitle {
+            @apply text-lg text-gray-500 max-w-2xl mx-auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#">Your Name / Agency</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#tech-stack" class="text-gray-600 hover:text-blue-600 transition">Tech Stack</a>
+                <a href="#timeline" class="text-gray-600 hover:text-blue-600 transition">Timeline</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition">Past Work</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+             <a href="#tech-stack" class="block text-gray-600 hover:text-blue-600 transition">Tech Stack</a>
+             <a href="#timeline" class="block text-gray-600 hover:text-blue-600 transition">Timeline</a>
+             <a href="#portfolio" class="block text-gray-600 hover:text-blue-600 transition">Past Work</a>
+             <a href="#contact" class="block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="gradient-bg py-20 px-6">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Building Your Custom Web Platform</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">A proposal to develop a flexible, secure, and production-ready website tailored to your unique business needs, with a focus on a long-term development partnership.</p>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="py-20 px-6 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="section-title">Recommended Technology Stack</h2>
+                <p class="section-subtitle mb-12">A robust, scalable, and developer-friendly stack designed for custom solutions and long-term maintainability.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <!-- WordPress -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">WordPress CMS (Backend)</h3>
+                        <p class="text-gray-600">The world's most popular CMS, providing a flexible foundation for custom functionality, secure user management, and an intuitive content editing experience for your team.</p>
+                    </div>
+                    <!-- Custom Theme -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Custom PHP/HTML5 Theme</h3>
+                        <p class="text-gray-600">A lightweight, bespoke theme built from the ground up based on your mood board. No bloat, fully responsive, and optimized for performance and a unique user experience.</p>
+                    </div>
+                    <!-- Stripe -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Stripe Payment Gateway</h3>
+                        <p class="text-gray-600">Industry-leading API for secure and reliable payment processing. Perfect for handling subscriptions, one-time payments, and complex transaction models as your business evolves.</p>
+                    </div>
+                     <!-- API Integrations -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">CRM & API Integrations</h3>
+                        <p class="text-gray-600">Seamlessly connect your contact form and user data to your preferred CRM or email platform (e.g., HubSpot, Mailchimp, etc.) for automated workflows.</p>
+                    </div>
+                     <!-- Git -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Git & Staging Workflow</h3>
+                        <p class="text-gray-600">A professional development process using Git for version control and a dedicated staging server. This ensures that updates are tested thoroughly before going live, guaranteeing site stability.</p>
+                    </div>
+                     <!-- Hosting -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Managed Hosting</h3>
+                        <p class="text-gray-600">Deployment on a secure, high-performance server with automated backups, SSL certificate, and performance tuning to ensure a fast and reliable experience for your users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="py-20 px-6">
+            <div class="container mx-auto text-center">
+                <h2 class="section-title">Process & Estimated Timeline</h2>
+                <p class="section-subtitle mb-16">A transparent, phased approach to ensure we meet your goals on time and on budget. Estimated timeline for initial launch: <strong>6-8 weeks</strong>.</p>
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-1/2 h-full w-0.5 bg-gray-300 transform -translate-x-1/2"></div>
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- Item 1 -->
+                        <div class="flex items-center w-full">
+                            <div class="w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-lg text-blue-600">Weeks 1-2</h4>
+                                <h3 class="font-semibold text-xl text-gray-800">Discovery & Design</h3>
+                                <p class="text-gray-600">We'll analyze your mood board, define project specs, map user flows, and create wireframes for the custom theme.</p>
+                            </div>
+                            <div class="w-10 h-10 bg-blue-600 rounded-full z-10 flex items-center justify-center text-white font-bold">1</div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="flex items-center w-full">
+                            <div class="w-1/2"></div>
+                            <div class="w-10 h-10 bg-blue-600 rounded-full z-10 flex items-center justify-center text-white font-bold">2</div>
+                            <div class="w-1/2 pl-8 text-left">
+                                <h4 class="font-bold text-lg text-blue-600">Weeks 3-6</h4>
+                                <h3 class="font-semibold text-xl text-gray-800">Core Development</h3>
+                                <p class="text-gray-600">Development of the custom theme, user authentication module, payment gateway integration, and contact form linking.</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="flex items-center w-full">
+                            <div class="w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-lg text-blue-600">Week 7</h4>
+                                <h3 class="font-semibold text-xl text-gray-800">Testing & Deployment</h3>
+                                <p class="text-gray-600">Rigorous testing on the staging server, performance tuning, and final deployment to your live server.</p>
+                            </div>
+                            <div class="w-10 h-10 bg-blue-600 rounded-full z-10 flex items-center justify-center text-white font-bold">3</div>
+                        </div>
+                        <!-- Item 4 -->
+                         <div class="flex items-center w-full">
+                            <div class="w-1/2"></div>
+                            <div class="w-10 h-10 bg-blue-600 rounded-full z-10 flex items-center justify-center text-white font-bold">4</div>
+                            <div class="w-1/2 pl-8 text-left">
+                                <h4 class="font-bold text-lg text-blue-600">Ongoing</h4>
+                                <h3 class="font-semibold text-xl text-gray-800">Maintenance & Growth</h3>
+                                <p class="text-gray-600">Monthly or quarterly check-ins for security patches, updates, and planning for future feature enhancements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 px-6 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="section-title">Similar Projects Handled</h2>
+                <p class="section-subtitle mb-12">Experience in building flexible, custom solutions that don't fit into a standard box.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/3498db/ffffff?text=Membership+Portal" alt="Membership Portal" class="w-full h-48 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Custom Membership Platform</h3>
+                            <p class="text-gray-600">A protected content and community site with tiered subscriptions, powered by WordPress and Stripe.</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Service+Bookings" alt="Service Booking System" class="w-full h-48 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">B2B Service Booking System</h3>
+                            <p class="text-gray-600">A web app allowing businesses to book and manage specialized services, with complex scheduling logic and invoicing.</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/e74c3c/ffffff?text=E-Learning+Site" alt="E-Learning Site" class="w-full h-48 object-cover">
+                        <div class="p-6 text-left">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Interactive E-Learning Site</h3>
+                            <p class="text-gray-600">A custom platform for online courses, featuring user progress tracking and integration with a third-party video API.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance Section -->
+        <section class="py-20 px-6">
+            <div class="container mx-auto text-center">
+                 <h2 class="section-title">Long-Term Partnership & Upkeep</h2>
+                <p class="section-subtitle mb-12">Your website is a living asset. I offer retainer plans to keep it secure, performant, and ready for future growth.</p>
+                <div class="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white border border-gray-200 p-8 rounded-lg w-full text-left">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Core Maintenance Plan</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Weekly Security Scans</li>
+                            <li>✓ Daily Cloud Backups</li>
+                            <li>✓ WordPress Core & Plugin Updates</li>
+                            <li>✓ Uptime Monitoring</li>
+                            <li>✓ Monthly Performance Report</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white border-2 border-blue-600 p-8 rounded-lg w-full text-left relative">
+                        <span class="absolute top-0 -translate-y-1/2 bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full">POPULAR</span>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Growth Partner Plan</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Everything in Core Maintenance</li>
+                            <li>✓ Performance & Database Tuning</li>
+                            <li>✓ Staging Environment Sync</li>
+                            <li>✓ <strong>5 Hours/Month</strong> for Feature Enhancements</li>
+                            <li>✓ Priority Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="gradient-bg py-20 px-6">
+            <div class="container mx-auto max-w-2xl text-center">
+                <h2 class="section-title">Ready to Start Building?</h2>
+                <p class="section-subtitle mb-8">Let's discuss the next steps. Fill out the form below or email me directly at <a href="mailto:your.email@example.com" class="text-blue-700 font-semibold">your.email@example.com</a>.</p>
+                <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg text-left space-y-4">
+                    <div>
+                        <label for="name" class="font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tell me a bit more about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white text-lg font-semibold p-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2025 Your Name / Agency. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Crafting Custom Web Solutions</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
